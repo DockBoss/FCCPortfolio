@@ -63,7 +63,6 @@
   justify-self: center;
 }
 .project-tile {
-  position: ;
   background-color: #dfe7d8;
   border-radius: 5px;
   height: 35vh;
@@ -173,4 +172,55 @@ html {
 body {
   padding: 0px;
   margin: 0px;
+}
+@media (max-width:500px){
+    #navbar{
+        margin-right: 0px;
+        justify-content: center;
+    }
+    #footer {
+        height: 140vh;
+        width: 100vw;
+        background-color: #83ccbb;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+        grid-template-areas:
+          "title title"
+          "link1 link2"
+          "link3 link4"
+          "link5 link6"
+          "link7 link8"
+          "link9 link10"
+          "link11 link12";
+      }
+      .footer__title{
+          font-size:20px;
+      }
+}
+@media (max-width:1000px){
+    #projects {
+        height: 200vh;
+        width: 100vw;
+        background-color: #d24239;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 40vh 40vh 40vh 40vh 40vh;
+        grid-template-areas:
+          "title"
+          "project1"
+          "project2"
+          "project3"
+          "project4";
+      }
+      .project-tile {
+        height: 35vh;
+        width: 90vw;
+      }
+      .footer__title{
+          font-size: 30px;
+      }
+      .projects__title{
+        font-size: 30px;
+      }
 }
